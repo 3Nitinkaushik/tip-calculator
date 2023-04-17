@@ -48,6 +48,7 @@ class _HomeState extends State<Home> {
                         fontSize: 40),
                   ),
                   onChanged: (value) {
+                    textEditingController.text==""?billamount=0:
                     billamount = double.parse(textEditingController.text);
                     setState(() {
                       result = (billamount * Tipamount / 100).round();
